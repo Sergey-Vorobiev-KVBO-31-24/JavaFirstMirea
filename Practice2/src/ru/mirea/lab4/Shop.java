@@ -9,13 +9,16 @@ public class Shop {
         catalog = new ArrayList<Computer>();
     }
 
-    public void getComps()
+    public void printComps()
     {
         if (catalog.isEmpty()) System.out.println("Магазин пуст!");
-        for (int i=0; i < catalog.size(); i++) System.out.println(i + " = " + catalog.get(i).toString());
+        else
+        {
+            for (int i=0; i < catalog.size(); i++) System.out.println(i + " = " + catalog.get(i).toString());
+        }
     }
 
-    private void clear()
+    public void clear()
     {
         catalog.clear();
     }
